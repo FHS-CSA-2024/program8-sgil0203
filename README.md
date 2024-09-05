@@ -1,51 +1,34 @@
-# Program 8
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    Scanner myScanner = new Scanner(System.in);
+    System.out.println("Enter first number: ");
+    int firstNumber = myScanner.nextInt();
+    System.out.println("Enter second number: ");
+    int secondNumber = myScanner.nextInt();
+    int sum = firstNumber + secondNumber; 
+    System.out.println("Sum: " + sum);
+    int difference = firstNumber - secondNumber; 
+    System.out.println("Difference: " + difference);
+    int product = firstNumber * secondNumber; 
+    System.out.println("Product: " + product);
+    double average = (firstNumber + secondNumber) / 2.0; 
+   System.out.println("Average: " + average);
+     int absoluteValue = Math.abs(firstNumber - secondNumber);
+   System.out.println("Distance: " + absoluteValue);
+    int maximum = (absoluteValue + firstNumber + secondNumber)/2;
+      System.out.println("Maximum: " + maximum);
+    int minimum = ((-absoluteValue) + firstNumber + secondNumber)/2;
+    System.out.println("Minimum: " + minimum); 
+  }
+}
+//Enter first number: 13
+//Enter second number: 20
+//Sum: 33
+//Difference: -7
+//Product: 260
+//Average: 16.5
+//Distance: 7
+//Maximum: 20
+//Minimum: 13
 
-## Program Description:  
-- Write a program that prompts the reader for two integers and then prints:
-  - The sum
-  - The difference
-  - The product
-  - The average
-  - The distance (absolute value of the difference)
-  - The maximum (the larger of the two)
-  - The minimum (the larger of the two)
-- You are not allowed to use any max or min function.
-  - Hint:  Use the abs function and compute:  |a - b| + a + b.
-- All variables should be int except average
-- Choose variable names which are meaningful for this problem, like Area, Width, etc.
-
-## Program Data:
-| C1  | C2 | C3 |
-| ----  | ---- | ---- |
-| Royale  | 286 | 9 |
-| Koopa   | 412 | 40 |
-| Pipe  | 361 | 18 |
-| Badwagon | 161 | 11 |
-
-## Statements Required: 
-- Input
-- Output
-- Math Library
-
-## Sample Output:
->Enter number 1: 13
->
->Enter number 2: 20
->
->-------------------
->
->Original numbers are 13 and 20
->
->Sum =	33
->
->Difference =	-7
->
->Product =	260
->
->Average =	 16.5
->
->Absolute value =	7
->
->Maximum =	20
->
->Minimum =	13
